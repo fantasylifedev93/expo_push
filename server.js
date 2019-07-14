@@ -9,7 +9,7 @@ var Expo = require('expo-server-sdk');
 let expo = new Expo.Expo();
 
 // Create application/x-www-form-urlencoded parser
-app.post('/devices', function (req, res) {
+app.post('/push', function (req, res) {
   const body = req.body;
   // Create the messages that you want to send to clents
   let messages = [];
